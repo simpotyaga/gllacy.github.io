@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+/* defolt mass defolt mass defolt mass defolt mass defolt mass defolt mass  */
+
+.red-button {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: #ed5a3d;
+    border-radius: 75px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 0px 1px rgba(172, 16, 0, 0.64);
+    text-align: center;
+}
+
+
+.red-button:hover {
+    background-color: #f07b64;
+    cursor: pointer;
+}
+
+.red-button:active {
+    box-shadow: inset 0px 4px 20px 0px rgba(172, 16, 0, 0.64);
+    background-color: #ed5a3d;
+}
+
+a:hover {
+    color: #e65456d3;
+}
+
+a {
+    color: #fff;
+}
+
+
+input, textarea {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+input:hover ,textarea:hover {
+    border: 2px solid #c9c8c6;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #91bee8;
+    outline: none;
+}
+
+
+
+
+.menu > ul > li > a:hover {
+    color: #111;
+    background-color: #f7f6f3;
+    
+}
+
+
+/* defolt mass defolt mass defolt mass defolt mass defolt mass defolt mass  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #8ba697;
+    background-image: url(../img/Мороженко-1.png) ;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.page-wraper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER  */
+
+
+.mein-menu {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+.mein-menu a {
+    color: #fff;
+}
+
+.menu {
+    width: 35%;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.menu ul li:hover  > ul {
+    transform: scaleY(1);
+}
+
+.menu > ul > li > a {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+.menu ul li > ul  {
+    position: absolute;
+    top: 30px;
+    left: -4px;
+    display: block;
+    background-color: #fff;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    min-width: 145px;
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .4);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s ease ;
+}
+
+
+
+
+
+.menu ul li > ul::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: -15px;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li > ul .accent::after  {
+    content: "";
+    width: calc(100% - 18px);
+    height: 1px;
+    background-color: #323232;
+    opacity: 0.2;
+    display: block;
+    margin: 0px auto;
+  }
+
+.menu ul li > ul .accent a{
+    font-weight: bold;
+    padding: 13px 21px;
+}
+
+.menu ul li > ul > li a {
+padding: 6px 21px;
+display: block;
+border-radius: 7px;
+}
+
+
+.menu ul li > ul > li a:hover {
+    background-color: #fbded8;
+}
+
+
+.menu ul li > ul > li a:active {
+    background-color: #f7b5a5;
+}
+
+.menu ul li > ul a {
+    color: #111;
+    
+}
+
+
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 32%;
+    position: relative;
+}
+
+.search-popup {
+    font-size: 14px;
+    padding: 20px ;
+    background-color: #f8f7f4;
+    border-radius: 7px;
+    position: absolute;
+    top: 45px;
+    width: 90%;
+    display: none;
+}
+
+.search-popup input {
+    width: 100%;
+}
+
+.search-popup-img-fon {
+    border-radius: 25px;
+    padding: 9px;
+    background-color: rgba(157, 177, 165, 0.9);
+}
+
+.entrance, .basket {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgba(157, 177, 165, 0.9);
+    border-radius: 25px;
+    color: #fff;
+    position: relative;
+}
+
+.entrance img, .basket img {
+    margin-right: 10px;
+}
+
+.entrance {
+    width: 8%;
+}
+
+.basket {
+    width: 10%;
+}
+
+
+.time-number-head {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    font-weight: bold;
+}
+
+.time-head {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.number-head {
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.title-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 255px;
+}
+
+.title-button h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.title-button .red-button {
+    font-size: 32px;
+    min-width: 42%;
+    margin: 25px auto 0;
+}
+
+/* hidden menu поиск корзина  */
+
+
+.entrance-popup {
+    font-size: 14px;
+    padding: 20px;
+    background-color: #f8f7f4;
+    border-radius: 7px;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    display: none;
+}
+
+.entrance-popup input {
+    
+    width: 240px;
+    margin: 10px auto;
+}
+
+.registration-button-entrance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.registration-button-entrance .registration a {
+    color: #323232;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.registration-button-entrance .red-button {
+    width: 45%;
+}
+
+
+.registration {
+    line-height: 20px;
+}
+
+/* free block  безплатное free block  безплатное free block  безплатное free block  безплатное free block  безплатное free block  безплатное  */
+
+.free-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+
+.free-block {
+    color: #fff;
+    border-radius: 12px;
+    width: 49%;
+    font-weight: bold;
+    padding: 20px 20px 25px 20px;
+}
+
+
+.free-block h2 {
+font-size: 35px;
+margin-bottom: 20px;
+}
+
+.free-block p {
+font-size: 18px;
+margin-bottom: 20px;
+line-height: 25px;
+}
+
+.wrap-button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+/* selling-products продажа продлуктов selling-products продажа продлуктов selling-products продажа продлуктов */
+
+.selling-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.product-sale-img {
+    position: relative;
+}
+
+.product-sale-price{
+    position: absolute;
+    bottom: 20px;
+    font-size: 45px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.product-sale-text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.product-sale-text h4 {
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+/* naturally натур продукт naturally натур продукт  NATURALLY НАТУР ПРОДУКТ  NATURALLY НАТУР ПРОДУКТ  */
+
+
+.naturally {
+    background-image: url(../img/Вафля-фон.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.naturally-description {
+    display: flex;
+    width: 49%;
+    padding-top: 11px;
+}
+
+.naturally-text {
+    padding-top: 20px;
+    padding-left: 7px;
+}
+
+.naturally-half {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qweqwe {
+    display: flex;
+}
+
+
+/* blog блог blog блог blog блог blog блог blog блог blog блог blog блог  */
+
+.blog-mailing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.blog, .mailing {
+    color: #fff;
+    border-radius: 12px;
+    width: 49%;
+    background-size: cover;
+}
+
+.blog {
+    padding: 30px 20px;
+    background-image: url(../img/Клубничный-фон_блок.png);
+    background-repeat: no-repeat;
+
+}
+
+.blog p {
+    color: #323232;
+    font-size: 16px;
+}
+
+.blog a {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: bold;
+    width: 54%;
+    text-decoration: underline;
+    padding: 15px 0px;
+}
+
+
+
+.mailing {
+    background-image: url(../img/Почтовый-фон.png);
+}
+
+.mailing-bg {   
+    margin: 5px;
+    background-color: #f8f7f4;
+    border-radius: 12px;
+    padding: 35px 20px;
+    
+}
+
+
+
+
+.mailing input {
+width: 70%;
+}
+
+.mailing p {
+    color: #5a5a5a;
+    line-height: 22px;
+}
+
+
+.email-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+/* map карта map карта map карта map карта map карта map карта map карта map карта map карта  */
+
+.map {
+    background-image: url(../img/Пин.png);
+    padding: 62px 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    line-height: 20px;
+}
+
+
+
+.address-number {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    font-size: 14px;
+    position: relative;
+}
+
+.address {
+font-weight: bold;
+font-size: 18px;
+margin-top: 6px;
+margin-bottom: 15px;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.address-number .red-button {
+    margin-top: 25px;
+}
+
+/* hidden обратная связь */
+.popup-feedback {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 25px;
+    background-color: #f8f7f4;
+    border-radius: 7px;
+    position: fixed;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%,0%);
+    max-width: 477px;
+    display: none;
+}
+
+.popup-feedback-close:hover {
+    background-color: rgba(128, 128, 128, 0.425);
+    cursor: pointer;
+}
+
+.show-popup {
+    display: block;
+}
+
+.popup-feedback input {
+    margin: 10px auto;
+    width: 60%;
+}
+
+.popup-feedback textarea {
+height: 150px;
+width: 100%;
+margin: 10px auto;
+}
+
+
+
+.popup-feedback-title-cross {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.popup-feedback-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+/* footer footer footer footer footer footer footer footer footer footer footer footer footer  */
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+}
+
+.social-networks {
+    padding: 30px 0px;
+}
+
+.for-users {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+
+
+.for-users p {
+    padding: 5px 17px;
+}
+
+
+
+.creator p {
+    font-size: 12px;
+}
+/* Медиа meadi Медиа meadi Медиа meadi Медиа meadi Медиа meadi Медиа meadi Медиа meadi Медиа meadi Медиа meadi  */
+
+
+
+
+  @media screen and (max-width: 950px) {
+    .content-wraper {
+       margin: 0 5px;
+  }
+}
+
+
